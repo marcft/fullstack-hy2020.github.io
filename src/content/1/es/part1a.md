@@ -7,14 +7,14 @@ lang: es
 
 <div class="content">
 
-Ahora comenzaremos a familiarizarnos con probablemente el tema más importante de este curso, es decir, la librería [React](https://es.react.dev/). Comencemos con la creación de una aplicación React simple y con el conocimiento de los conceptos básicos de React.
+Ahora comenzaremos a familiarizarnos con probablemente el tema más importante de este curso, es decir, la librería [React](https://es.react.dev/). Comencemos con la creación de una aplicación React simple y a conocer los conceptos básicos de React.
 
 La forma más fácil de empezar es utilizando una herramienta llamada [Vite](https://es.vitejs.dev/).
 
 Comencemos creando una aplicación llamada <i>part1</i>, naveguemos a su directorio e instalemos las librerías:
 
 ```bash
-# npm 6.x (desactualizado, pero aun en uso por algunos):
+# npm 6.x (desactualizado, pero aún en uso por algunos):
 npm create vite@latest part1 --template react
 
 # npm 7+, el doble guion adicional es necesario:
@@ -36,7 +36,7 @@ La consola indica que la aplicación ha iniciado en localhost, puerto 5173, es d
 
 ![Captura de pantalla de la consola ejecutando vite en localhost 5173](../../images/1/1-vite1.png)
 
-Vite inicia la aplicación [por defecto](https://es.vitejs.dev/config/server-options.html#server-port) en el puerto 5173. Si este no está libre, Vite utiliza el siguiente numero de puerto libre.
+Vite inicia la aplicación [por defecto](https://es.vitejs.dev/config/server-options.html#server-port) en el puerto 5173. Si este no está libre, Vite utiliza el siguiente número de puerto libre.
 
 Abre el navegador y un editor de código para que puedas ver el código y el navegador al mismo tiempo en la pantalla:
 
@@ -66,11 +66,11 @@ const App = () => {
 export default App
 ```
 
-Los archivos <i>App.css</i> e <i>index.css</i>, y el directorio <i>assets</i> pueden eliminarse ya que nos son necesarios en nuestra aplicación por ahora.
+Los archivos <i>App.css</i> e <i>index.css</i>, y el directorio <i>assets</i> pueden eliminarse ya que no son necesarios en nuestra aplicación por ahora.
 
 ### create-react-app
 
-En lugar de Vite, tu puedes usar la vieja herramienta de generación [create-react-app](https://github.com/facebookincubator/create-react-app) en el curso para inicializar aplicaciones. La diferencia más visible es el nombre del archivo de arranque de la aplicación, el cual es <i>index.js</i>.
+En lugar de Vite, puedes usar la vieja herramienta de generación [create-react-app](https://github.com/facebookincubator/create-react-app) en el curso para inicializar aplicaciones. La diferencia más visible es el nombre del archivo de arranque de la aplicación, el cual es <i>index.js</i>.
 
 La manera de iniciar la aplicación también es diferente en CRA, en esta se inicia con el comando
 
@@ -114,7 +114,7 @@ De forma predeterminada, el archivo <i>index.html</i> no contiene ningún marcad
 
 Puedes intentar agregar algo de HTML al archivo. Sin embargo, cuando se usa React, todo el contenido que necesita ser renderizado es generalmente definido como componentes de React.
 
-Echemos un vistazo mas de cerca al código que define el componente:
+Echemos un vistazo más de cerca al código que define el componente:
 
 ```js
 const App = () => (
@@ -243,9 +243,9 @@ const App = () => {
 
 La compilación está a cargo de [Babel](https://babeljs.io/repl/). Los proyectos creados con *create-react-app* o *vite* están configurados para compilarse automáticamente. Aprenderemos más sobre este tema en la [parte 7](/es/part7) de este curso.
 
-También es posible escribir React como "JavaScript puro" sin usar JSX. Aunque, nadie que este cuerdo lo haría.
+También es posible escribir React como "JavaScript puro" sin usar JSX. Aunque, nadie que esté cuerdo lo haría.
 
-En la práctica, JSX se parece mucho a HTML con la distinción de que con JSX puede incrustar fácilmente contenido dinámico escribiendo JavaScript entre llaves. La idea de JSX es bastante similar a muchos lenguajes de plantillas, como Thymeleaf, utilizado junto con Java Spring, que se utiliza en servidores.
+En la práctica, JSX se parece mucho a HTML con la distinción de que con JSX puedes incrustar fácilmente contenido dinámico escribiendo JavaScript entre llaves. La idea de JSX es bastante similar a muchos lenguajes de plantillas, como Thymeleaf, utilizado junto con Java Spring, que se utiliza en servidores.
 
 JSX es similar a [XML](https://developer.mozilla.org/es/docs/Web/XML/XML_introduction), lo que significa que todas las etiquetas deben cerrarse. Por ejemplo, una nueva línea es un elemento vacío, que en HTML se puede escribir de la siguiente manera:
 
@@ -373,11 +373,11 @@ Los props enviados por el componente <i>App</i> son los valores de las variables
 
 El componente <i>Hello</i> también imprime en consola el valor del objeto props.
 
-Yo realmente espero que tu consola esté abierta. Si no es asi, recuerda tu promesa:
+Yo realmente espero que tu consola esté abierta. Si no es así, recuerda tu promesa:
 
 > <i>Prometo dejar la consola abierta todo el tiempo</i> durante este curso, y por el resto de mi vida mientras esté haciendo desarrollo web.
 
-El desarrollo de software es difícil. Este se vuelve aun más difícil si uno no está usando todas las herramientas disponibles como la consola de desarrollo e imprimiendo la depuración con _console.log_. Los profesionales usan ambas <i>todo el tiempo</i> y no hay una sola razón de porque un principiante no deberías adoptar estos maravillosos métodos de ayuda que le harán la vida mucho más fácil.
+El desarrollo de software es difícil. Este se vuelve aún más difícil si uno no está usando todas las herramientas disponibles como la consola de desarrollo e imprimiendo la depuración con _console.log_. Los profesionales usan ambas <i>todo el tiempo</i> y no hay una sola razón de por qué un principiante no debería adoptar estos maravillosos métodos de ayuda que le harán la vida mucho más fácil.
 
 ### Posible mensaje de error
 
@@ -491,7 +491,7 @@ const App = () => {
 }
 ```
 
-Sin embargo cuando se define el componente raíz de la aplicación, hacer esto no es algo particularmente sabio, y hace que el código se vea un poco desagradable.
+Sin embargo, cuando se define el componente raíz de la aplicación, hacer esto no es algo particularmente sabio, y hace que el código se vea un poco desagradable.
 
 Debido a que el elemento raíz está estipulado, tenemos elementos div "extra" en el árbol DOM. Esto se puede evitar usando [fragments](https://es.react.dev/reference/react/Fragment), es decir, envolviendo los elementos que el componente devolverá con un elemento vacío: 
 
@@ -535,7 +535,7 @@ const App = () => {
 export default App
 ```
 
-Sin embargo, nada aparece en la pantalla. He tratado de buscar el problema en el código por 15 minutos, pero no he podido encontrar cual puede ser el problema.
+Sin embargo, nada aparece en la pantalla. He tratado de buscar el problema en el código por 15 minutos, pero no he podido encontrar cuál puede ser el problema.
 
 Finalmente recordé la promesa que hice
 
@@ -593,7 +593,7 @@ y la edad
 {friends[0].age}
 ```
 
-Después de corregir el error, tu deberías limpiar los mensajes de la consola presionando el botón 🚫 y luego recargando el contenido de la página, y asegurarte de que no se están mostrando mensajes de error.
+Después de corregir el error, deberías limpiar los mensajes de la consola presionando el botón 🚫 y luego recargando el contenido de la página, y asegurarte de que no se están mostrando mensajes de error.
 
 Una pequeña nota adicional a la anterior. React también permite renderizar arreglos <i>si</i> el arreglo contiene valores que son elegibles para renderizar (como números y cadenas). Así que el siguiente programa funcionaría, aunque el resultado puede que no sea el que queremos:
 
@@ -616,7 +616,7 @@ En esta parte, ni siquiera vale la pena intentar utilizar la renderización dire
 <div class="tasks"> 
   <h3>Ejercicios 1.1.-1.2.</h3> 
 
-Los ejercicios se envían a través de GitHub y marcando los ejercicios completados en el [sistema de envío ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen). 
+Los ejercicios se envían a través de GitHub y marcando los ejercicios completados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen). 
 
 Los ejercicios se envían **una parte a la vez**. Cuando hayas enviado los ejercicios para una parte del curso, ya no podrás enviar ejercicios incompletos para la misma parte.
 
@@ -647,7 +647,7 @@ Por cada aplicación web para una serie de ejercicios, se recomienda enviar todo
 
   <h4>1.1: Información del Curso, paso 1</h4> 
 
-<i>La aplicación en la que comenzaremos a trabajar en este ejercicio se continuara desarrollando en algunos de los siguientes ejercicios. En este y otros conjuntos de ejercicios futuros de este curso, es suficiente enviar solo el estado final de la aplicación. Si lo deseas, también puedes crear un commit para cada ejercicio de la serie, pero esto es completamente opcional.</i>
+<i>La aplicación en la que comenzaremos a trabajar en este ejercicio se continuará desarrollando en algunos de los siguientes ejercicios. En este y otros conjuntos de ejercicios futuros de este curso, es suficiente enviar solo el estado final de la aplicación. Si lo deseas, también puedes crear un commit para cada ejercicio de la serie, pero esto es completamente opcional.</i>
 
 Usa Vite para inicializar una nueva aplicación. Modifica <i>main.jsx</i> para que coincida con lo siguiente
 
@@ -713,7 +713,7 @@ const App = () => {
 }
 ```
 
-**ADVERTENCIA** No trates de programar todos los componentes de corrido, porque esto podría ciertamente romper toda la aplicación. Procede en pequeños pasos, primero haz por ejemplo: el componente <i>Header</i> y solo cuando confirmes que funciona, podrás continuar con el siguiente componente.
+**ADVERTENCIA** No trates de programar todos los componentes de corrido, porque esto podría ciertamente romper toda la aplicación. Procede en pequeños pasos, primero haz, por ejemplo, el componente <i>Header</i> y solo cuando confirmes que funciona, podrás continuar con el siguiente componente.
 
 El progreso cuidadoso y en pequeños pasos puede parecer lento, pero en realidad es <i>con diferencia la forma más rápida</i> de progresar. El famoso desarrollador de software Robert "Uncle Bob" Martin ha declarado
 

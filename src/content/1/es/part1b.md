@@ -7,7 +7,7 @@ lang: es
 
 <div class="content">
 
-Durante el curso, tenemos el objetivo y la necesidad de aprender una cantidad suficiente de JavaScript ademas del desarrollo web.
+Durante el curso, tenemos el objetivo y la necesidad de aprender una cantidad suficiente de JavaScript además del desarrollo web.
 
 JavaScript ha avanzado rápidamente en los últimos años y en este curso usamos características de las versiones más nuevas. El nombre oficial del estándar JavaScript es [ECMAScript](https://es.wikipedia.org/wiki/ECMAScript). En este momento, la última versión es la lanzada en junio de 2024 con el nombre [ECMAScript® 2024](https://www.ecma-international.org/ecma-262/), también conocido como ES15.
 
@@ -65,7 +65,7 @@ t.forEach(value => {
 })                    
 ```
 
-En este ejemplo, cabe destacar el hecho de que el contenido de el array se puede modificar aunque esté definido como _const_. Como el array es un objeto, la variable siempre apunta al mismo objeto. Sin embargo, el contenido del array cambia a medida que se le agregan nuevos elementos.
+En este ejemplo, cabe destacar el hecho de que el contenido deel array se puede modificar aunque esté definido como _const_. Como el array es un objeto, la variable siempre apunta al mismo objeto. Sin embargo, el contenido del array cambia a medida que se le agregan nuevos elementos.
 
 Una forma de iterar a través de los elementos del array es usar _forEach_ como se ve en el ejemplo. _forEach_ recibe una <i>función</i> definida usando la sintaxis de flecha como parámetro.
 
@@ -77,7 +77,7 @@ value => {
 
 forEach llama a la función <i>para cada uno de los elementos del array</i>, siempre pasando el elemento individual como parámetro. La función como parámetro de forEach también puede recibir [otros parámetros](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
 
-En el ejemplo anterior, se agregó un nuevo elemento al array usando el método [push](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/push). Cuando se usa React, a menudo se usan técnicas de programación funcional. Una característica del paradigma de programación funcional es el uso de estructuras de datos [inmutables](https://es.wikipedia.org/wiki/Objeto_inmutable). En el código de React, es preferible usar el método [concat](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/concat), que no agrega el elemento al array, pero crea un nuevo array en la que se incluyen el contenido del array anterior y el nuevo elemento.
+En el ejemplo anterior, se agregó un nuevo elemento al array usando el método [push](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/push). Cuando se usa React, a menudo se usan técnicas de programación funcional. Una característica del paradigma de programación funcional es el uso de estructuras de datos [inmutables](https://es.wikipedia.org/wiki/Objeto_inmutable). En el código de React, es preferible usar el método [concat](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/concat), que no agrega el elemento al array, sino que crea un nuevo array en la que se incluyen el contenido del array anterior y el nuevo elemento.
 
 ```js
 const t = [1, -1, 3]
@@ -119,7 +119,7 @@ const t = [1, 2, 3, 4, 5]
 const [first, second, ...rest] = t
 
 console.log(first, second)  // se imprime 1 2
-console.log(rest)          // se imprime [3, 4 ,5]
+console.log(rest)          // se imprime [3, 4, 5]
 ```
 
 Gracias a la asignación, las variables _first_ y _second_ recibirán los dos primeros enteros del array como sus valores. Los enteros restantes se "recopilan" en un array propio que luego se asigna a la variable _rest_.
@@ -293,9 +293,9 @@ const App = () => {
 }
 ```
 
-  <h4>1.4: Información del Curso paso 4</h4> 
+  <h4>1.4: Información del Curso Paso 4</h4> 
 
-Coloca los objetos en un array. Modifica las definiciones de las variables de <i>App</i> de la siguiente forma y modifica las otras partes de la aplicación que sean necesarias para que continue funcionando:
+Coloca los objetos en un array. Modifica las definiciones de las variables de <i>App</i> de la siguiente forma y modifica las otras partes de la aplicación que sean necesarias para que continúe funcionando:
 
 ```js
 const App = () => {
@@ -341,7 +341,7 @@ const App = () => {
 }
 ```
 
-  <h4>1.5: Información del Curso paso 5</h4> 
+  <h4>1.5: Información del Curso Paso 5</h4> 
 
 Llevemos los cambios un paso más allá. Cambia el curso y sus partes a un solo objeto JavaScript. Arregla todo lo que se rompa.
 
@@ -457,7 +457,7 @@ const referenceToGreet = arto.greet
 referenceToGreet() // se imprime "hello, my name is undefined"
 ```
 
-Al llamar al método a través de una referencia, el método pierde el conocimiento de cuál era el _this_ original. A diferencia de otros lenguajes, en JavaScript el valor de [this](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/this) se define en función de <i>cómo el método se llama</i>. Cuando se llama al método a través de una referencia, el valor de _this_ se convierte en el llamado [objeto global](https://developer.mozilla.org/es/docs/Glossary/Global_object) y el resultado final a menudo no es lo que el desarrollador de software había previsto originalmente.
+Al llamar al método a través de una referencia, el método pierde el conocimiento de cuál era el _this_ original. A diferencia de otros lenguajes, en JavaScript el valor de [this](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/this) se define en función de <i>cómo se llama el método</i>. Cuando se llama al método a través de una referencia, el valor de _this_ se convierte en el llamado [objeto global](https://developer.mozilla.org/es/docs/Glossary/Global_object) y el resultado final a menudo no es lo que el desarrollador de software había previsto originalmente.
 
 Perder la pista de _this_ al escribir código JavaScript genera algunos problemas potenciales. A menudo surgen situaciones en las que React o Node (o más específicamente el motor JavaScript del navegador web) necesita llamar a algún método en un objeto que el desarrollador ha definido. Sin embargo, en este curso evitamos estos problemas mediante el uso de JavaScript "this-less". 
 
@@ -532,7 +532,7 @@ Otro gran recurso para aprender JavaScript es [javascript.info](https://es.javas
 
 El libro gratuito [Eloquent JavaScript](https://eloquentjavascript.net) te lleva desde los conceptos básicos hasta temas interesantes rápidamente. Es una mezcla de teoría, proyectos y ejercicios, y abarca tanto la teoría general de programación como el lenguaje JavaScript.
 
-[Namaste 🙏 JavaScript](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP) es otro excelente y altamente recomendado tutorial gratuito de JavaScript para entender cómo funciona JS bajo el capó. Namaste JavaScript es un curso puro y en profundidad de JavaScript lanzado de forma gratuita en YouTube. Cubrirá en detalle los conceptos fundamentales de JavaScript y todo acerca de cómo JS funciona detrás de escena dentro del motor de JavaScript.
+[Namaste 🙏 JavaScript](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP) es otro excelente y altamente recomendado tutorial gratuito de JavaScript para entender cómo funciona JS bajo el capó. Namaste JavaScript es un curso puro y en profundidad de JavaScript lanzado de forma gratuita en YouTube. Cubrirá en detalle los conceptos fundamentales de JavaScript y todo acerca de cómo JS funciona internamente dentro del motor de JavaScript.
 
 [egghead.io](https://egghead.io) tiene muchos screencasts de calidad sobre JavaScript, React y otros temas interesantes. Desafortunadamente, parte del material está detrás de un muro de pago.
 

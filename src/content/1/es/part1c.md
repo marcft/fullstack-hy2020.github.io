@@ -331,17 +331,13 @@ Cuando se llama a la función de modificación de estado _setCounter_, <i>React 
 }
 ```
 
-La segunda vez que la función del componente es ejecutado, llama a la función _useState_ y devuelve el nuevo valor del estado: 1. Al ejecutar el cuerpo de la función nuevamente, también se realiza una nueva llamada de función a _setTimeout_, que ejecuta el tiempo de espera de un segundo e incrementa el estado _counter_ nuevamente. Debido a que el valor de la variable _counter_ es 1, incrementar el valor en 1 es esencialmente lo mismo que una expresión que establece el valor de _counter_ en 2.
-
-```js
-() => setCounter(2)
-```
+La segunda vez que la función del componente es ejecutada, llama a la función _useState_ y devuelve el nuevo valor del estado: 1. Al ejecutar el cuerpo de la función nuevamente, también se realiza una nueva llamada de función a _setTimeout_, que ejecuta el tiempo de espera de un segundo e incrementa el estado _counter_ nuevamente. Debido a que el valor de la variable _counter_ es 1, incrementar el valor en 1 es esencialmente lo mismo que una expresión que establece el valor de _counter_ en 2.
 
 Mientras tanto, el antiguo valor de _counter_ - "1" - se muestra en la pantalla.
 
 Cada vez que _setCounter_ modifica el estado, hace que el componente se vuelva a renderizar. El valor del estado se incrementará nuevamente después de un segundo y esto continuará repitiéndose mientras la aplicación esté en ejecución.
 
-Si el componente no se renderiza cuando tu crees que debería, o si se renderiza en el "momento incorrecto", puedes depurar la aplicación registrando los valores de las variables del componente en la consola. Si agregamos lo siguiente a nuestro código:
+Si el componente no se renderiza cuando crees que debería, o si se renderiza en el "momento incorrecto", puedes depurar la aplicación registrando los valores de las variables del componente en la consola. Si agregamos lo siguiente a nuestro código:
 
 ```js
 const App = () => {
@@ -364,7 +360,7 @@ Es fácil de seguir y rastrear las llamadas realizadas a la función de renderiz
 
 ![Captura de pantalla de rendering log en herramientas de desarrollo](../../images/1/4e.png)
 
-¿Estaba la consola de tu navegador abierta? Si no lo estaba, entonces promete que esta sera la ultima vez que necesitas que te lo recuerden.
+¿Estaba la consola de tu navegador abierta? Si no lo estaba, entonces promete que esta será la última vez que necesitas que te lo recuerden.
 
 ### Control de eventos
 
@@ -483,7 +479,7 @@ Esto rompería completamente nuestra aplicación:
 ```
 
 el controlador de eventos es en realidad una <i>llamada a la función</i>. En muchas situaciones esto está bien, pero no en esta situación particular. Al principio, el valor de la variable <i>counter</i> es 0. Cuando React renderiza el componente por primera vez, ejecuta la llamada de función <em>setCounter(0+1)</em> y cambia el valor del estado del componente en 1.
-Esto hará que el componente se vuelva a renderizar, react ejecutará la llamada a la función setCounter nuevamente, y el estado cambiará dando lugar a otro re-renderizado..
+Esto hará que el componente se vuelva a renderizar, React ejecutará la llamada a la función setCounter nuevamente, y el estado cambiará dando lugar a otro re-renderizado..
 
 Definamos los controladores de eventos como lo hicimos antes
 
@@ -682,7 +678,7 @@ Ahora veamos que se imprime en la consola cuando se hace clic en los botones plu
 
 ![Navegador mostrando la consola con los valores impresos resaltados](../../images/1/31.png)
 
-No intentes siempre adivinar lo que tu código hace. Justamente lo mejor es usar _console.log_ y <i>ver con tus propios ojos</i> lo que este hace.
+No intentes siempre adivinar lo que tú código hace. Justamente lo mejor es usar _console.log_ y <i>ver con tus propios ojos</i> lo que este hace.
 
 ### Refactorización de los componentes
 

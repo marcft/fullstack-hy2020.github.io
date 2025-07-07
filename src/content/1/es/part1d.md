@@ -529,7 +529,7 @@ La ejecución se detendrá una vez que llegue a un punto donde se ejecuta el com
 
 ![debugger pausado en dev tools](../../images/1/7a.png)
 
-Al ir a la pestaña <i>Console (consola)</i>, Es fácil inspeccionar el estado actual de las variables:
+Al ir a la pestaña <i>Console (consola)</i>, es fácil inspeccionar el estado actual de las variables:
 
 ![screenshot de la consola](../../images/1/8a.png)
 
@@ -563,7 +563,7 @@ El primer <i>State</i> contiene el valor del estado <i>left</i>, el siguiente co
 
 Hay algunas limitaciones y [reglas](https://es.react.dev/warnings/invalid-hook-call-warning#breaking-rules-of-hooks) que debemos seguir para asegurarnos de que nuestra aplicación utilice correctamente las funciones de estado basadas en hooks.
 
-La función _useState_ (así como la función _useEffect_ presentada más adelante en el curso) <i>no se debe llamar</i> desde dentro de un loop, una expresión condicional o cualquier lugar que no sea una función que defina a un componente. Esto debe hacerse para garantizar que los hooks siempre se llamen en el mismo orden o, si este no es el caso, la aplicación se comportará de manera errática.
+La función _useState_ (así como la función _useEffect_ presentada más adelante en el curso) <i>no se debe llamar</i> desde dentro de un bucle, una expresión condicional o cualquier lugar que no sea una función que defina a un componente. Esto debe hacerse para garantizar que los hooks siempre se llamen en el mismo orden o, si este no es el caso, la aplicación se comportará de manera errática.
 
 En resumen, los hooks solo se pueden llamar desde el interior de un cuerpo de la función que define un componente de React:
 
@@ -594,11 +594,11 @@ const App = () => {
 }
 ```
 
-### Revision de los Controladores de Eventos
+### Revisión de los Controladores de Eventos
 
 El control de eventos ha demostrado ser un tema difícil en iteraciones anteriores de este curso.
 
-Por esta razón volveremos a tratar el tema.
+Por esta razón, volveremos a tratar el tema.
 
 Supongamos que estamos desarrollando esta sencilla aplicación con el siguiente componente <i>App</i>:
 
@@ -1130,7 +1130,7 @@ Programar es difícil, por eso usaré todos los medios posibles para hacerlo má
 
 Modelos de lenguaje grandes como [ChatGPT](https://chat.openai.com/auth/login), [Claude](https://claude.ai/) y [GitHub Copilot](https://github.com/features/copilot) han demostrado ser muy útiles en el desarrollo de software.
 
-Personalmente, principalmente uso Copilot, el cual se integra a la perfección con VS Code gracias al [plugin](https://visualstudio.microsoft.com/github-copilot/).
+Personalmente, uso sobre todo Copilot, el cual se integra a la perfección con VS Code gracias al [plugin](https://visualstudio.microsoft.com/github-copilot/).
 
 Copilot es útil en una amplia variedad de escenarios. A Copilot se le puede pedir que genere código para un archivo abierto describiendo la funcionalidad deseada en texto:
 
@@ -1360,7 +1360,7 @@ export default App
 
 El contenido del archivo <i>main.jsx</i> es el mismo de los ejercicios anteriores.
 
-Busca como generar números aleatorios en JavaScript, por ejemplo, en un buscador o en [Mozilla Developer Network](https://developer.mozilla.org). Recuerda que puedes probar la generación de números aleatorios, por ejemplo, directamente en la consola de tu navegador.
+Busca cómo generar números aleatorios en JavaScript, por ejemplo, en un buscador o en [Mozilla Developer Network](https://developer.mozilla.org). Recuerda que puedes probar la generación de números aleatorios, por ejemplo, directamente en la consola de tu navegador.
 
 Tu aplicación finalizada podría verse así
 
